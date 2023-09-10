@@ -5,6 +5,12 @@
     "version": "1.0",
     "permissions": ["contextMenus", "tabs"],
     "background": {
-        "service_worker": "main.js"
-    }
+        "service_worker": "service.js"
+    },
+    "content_scripts" : [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["/content.js"]
+        }
+    ]
   }
