@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "Base64decoder",
+    "description": "Decode Base64 and open the url",
+    "version": "1.0",
+    "permissions": ["contextMenus", "tabs"],
+    "background": {
+        "service_worker": "main.js"
+    }
+  }
