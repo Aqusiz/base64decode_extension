@@ -1,7 +1,7 @@
 const base64RE = /^([0-9a-zA-Z+/]{4})*(([0-9a-zA-Z+/]{2}==)|([0-9a-zA-Z+/]{3}=))?$/;
 
 function isBase64(text) {
-    return base64RE.test(text);
+    return text !== "" && base64RE.test(text);
 }
 
 const pList = document.querySelectorAll("p");
