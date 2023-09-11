@@ -4,9 +4,6 @@
     "description": "Decode Base64 and open the url",
     "version": "1.0",
     "permissions": ["contextMenus", "tabs"],
-    "background": {
-        "service_worker": "service.js"
-    },
     "content_scripts" : [
         {
             "matches": ["<all_urls>"],
